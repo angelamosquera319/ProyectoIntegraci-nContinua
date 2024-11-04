@@ -29,13 +29,12 @@ Este proyecto implementa dos contenedores que se comunican entre sí usando Dock
 ## Pasos para Crear los Contenedores
 
 - **1. Crear el Dockerfile para el Contenedor Web:** En la carpeta web, crea un archivo Dockerfile con el siguiente contenido:
-# web/Dockerfile
+
 FROM nginx:latest
 COPY index.html /usr/share/nginx/html/index.html
 
 - **2. Crear el Dockerfile para el Contenedor API:** En la carpeta api, crea un archivo Dockerfile con el siguiente contenido:
 
-# api/Dockerfile
 FROM node:14
 WORKDIR /app
 COPY package.json .
@@ -46,7 +45,7 @@ CMD ["npm", "start"]
 
 - **3. Crear el Archivo docker-compose.yml**
 Para simplificar la creación y ejecución de ambos contenedores, crea un archivo docker-compose.yml en la raíz del proyecto con el siguiente contenido:
-# docker-compose.yml
+
 version: '3'
 
 services:
