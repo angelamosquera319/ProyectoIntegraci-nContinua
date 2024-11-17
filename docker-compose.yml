@@ -1,5 +1,7 @@
-version: '3'
+version: '3.8'
+
 services:
+  # Servicio Web
   web:
     build: ./web
     ports:
@@ -7,6 +9,7 @@ services:
     networks:
       - mi_red
 
+  # Servicio API
   api:
     build: ./api
     ports:
@@ -14,6 +17,23 @@ services:
     networks:
       - mi_red
 
+  # Servicio Jenkins
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins-master
+    ports:
+      - "9090:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+    networks:
+      - mi_red
+
+# Red de contenedores
 networks:
   mi_red:
     driver: bridge
+
+# Volúmenes
+volumes:
+  jenkins_home:

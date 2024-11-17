@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ventaentrada.css">
+    <title>Venta de entradas</title>
+</head>
+<body>
+  <div class="wrapper">
+     <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conciertos.html">Conciertos</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registrar.html">Registrarse / Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Texto promocional -->
+        <h2>¡Compra ya antes de que tu ex lo haga!</h2>
+
+        <!-- Nombre del concierto -->
+        <h3 id="nombreConcierto"></h3>
+
+        <!-- Imagen del concierto -->
+        <img id="imagenConcierto" src="" alt="Imagen del concierto">
+
+        <!-- Opciones de compra: tipo de entrada -->
+        <div class="entradas">
+            <label>
+                <input type="radio" name="entrada" value="general" id="general"> General
+            </label>
+            <label>
+                <input type="radio" name="entrada" value="vip" id="vip"> VIP
+            </label>
+        </div>
+
+        <!-- Precio del concierto -->
+        <p>Precio: <span id="precioConcierto">0</span></p>
+
+        <!-- Botón para comprar la entrada -->
+        <button class="comprar" id="comprarEntrada">Comprar entrada</button>
+
+        <div id="modalMensaje" class="modal">
+            <div class="modal-content">
+                <p id="modalMensajeTexto"></p>
+                <button id="aceptar">Aceptar</button>
+            </div>
+        </div>                
+    </main>
+    <footer>
+        <ul>
+            <li><a href="politicas.html">Políticas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </footer>
+
+    <script src="ventaentrada.js"></script>
+
+</div>
+</body>
+</html>

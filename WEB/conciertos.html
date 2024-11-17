@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Declaración del documento HTML y configuración del idioma -->
+    <meta charset="UTF-8">
+    <!-- Configuración para que el diseño sea responsive en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página web -->
+    <title>Conciertos</title>
+    <!-- Enlace a los iconos de Boxicons para los botones de navegación del carrusel -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Enlace a la hoja de estilos CSS personalizada -->
+    <link rel="stylesheet" href="concierto.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sección del encabezado que incluye el menú de navegación -->
+        <header>
+            <nav>
+            <!-- Menú de navegación con enlaces a otras páginas del sitio -->
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="conciertos.html" class="active">Conciertos</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="registrar.html">Registrarse / Ingresar</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <!-- Contenido principal de la página -->
+        <main>
+            <!-- Título principal de la página -->
+            <h1>Encuentra tu próxima razón para perder la voz.</h1>
+            <!-- Contenedor del carrusel -->
+            <div class="container-carousel">
+            <!-- Elemento que contiene todas las secciones del carrusel -->
+                <div class="carruseles" id="slider">
+                <!-- Sección del primer concierto en el carrusel -->
+                    <section class="slider-section">
+                        <div class="concierto-info">
+                        <!-- Imagen del primer evento -->
+                            <img src="evento1.jpg" alt="Evento 1">
+                            <!-- Información sobre el primer evento -->
+                            <div class="info">
+                                <h2>Concierto de Rock</h2>
+                                <p>Fecha: 12 de octubre, 2024</p>
+                                <p>Lugar: Bogotá</p>
+                                <p>Artistas: Banda A, Banda B</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="slider-section">
+                        <div class="concierto-info">
+                            <img src="evento2.jpg" alt="Evento 2">
+                            <div class="info">
+                                <h2>Festival de Música Electrónica</h2>
+                                <p>Fecha: 5 de noviembre, 2024</p>
+                                <p>Lugar: Medellín</p>
+                                <p>Artistas: DJ X, DJ Y</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="slider-section">
+                        <div class="concierto-info">
+                            <img src="evento3.webp" alt="Evento 3">
+                            <div class="info">
+                                <h2>Concierto de Pop</h2>
+                                <p>Fecha: 20 de diciembre, 2024</p>
+                                <p>Lugar: Cali</p>
+                                <p>Artistas: Artista 1, Artista 2</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Botón para desplazarse hacia la izquierda en el carrusel -->
+                <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
+                <!-- Botón para desplazarse hacia la derecha en el carrusel -->
+                <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
+            </div>
+        </main>
+            
+        <!-- Pie de página con enlaces -->
+        <footer>
+            <ul>
+                <li><a href="politicas.html">Políticas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </footer>
+    
+        <!-- Enlace al archivo JavaScript personalizado para la funcionalidad del carrusel -->
+        <script src="conciertos.js"></script>
+    </div>
+</body>
+</html>

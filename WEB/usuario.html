@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="usuario.css">
+    <title>Usuario</title>
+</head>
+<body>
+  <div class="wrapper">
+     <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conciertos.html">Conciertos</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registrar.html">Registrarse / Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal dividida en dos -->
+    <main>
+        <!-- Frase de bienvenida -->
+        <div class="bienvenida">
+            <h1>¡Bienvenido de nuevo, [Nombre]! Tu siguiente concierto te espera.</h1>
+        </div>
+
+        <div class="contenedor-principal">
+            <!-- Información del usuario -->
+            <section class="info-usuario">
+                <div class="usuario-img"></div>
+                <p><strong>Nombre:</strong> [Nombre del Usuario]</p>
+                <p><strong>Correo:</strong> [Correo]</p>
+                <button Id="cerrarSesion">Cerrar sesión</button>
+            </section>
+
+            <!-- Información del concierto en triángulo invertido -->
+            <section class="info-conciertos">
+                <h2>Conciertos</h2>
+                <div class="conciertos-grid">
+                    <div class="concierto">
+                        <a>
+                            <img src="evento1.jpg" alt="Concierto 1">
+                        </a>
+                        <p>Concierto de Rock</p>
+                    </div>
+                    <div class="concierto">
+                        <a>
+                            <img src="evento2.jpg" alt="Concierto 2">
+                        </a>
+                        <p>Festival de Música Electrónica</p>
+                    </div>
+                    <div class="concierto">
+                        <a>
+                            <img src="evento3.webp" alt="Concierto 3">
+                        </a>
+                        <p>Concierto de Pop</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="politicas.html">Políticas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </footer>
+
+    <script src="usuario.js"></script>
+
+</div>
+</body>
+</html>

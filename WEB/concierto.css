@@ -1,0 +1,167 @@
+html, body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1B4F72;
+    color: white;
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #06b7f8;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: #06b7f8;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #2980B9;
+}
+
+footer {
+    background-color: #73b6e8;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    text-align: center;
+    flex: 1;
+    margin: 100px 70px 70px 70px;
+}
+
+/* Asegura que el contenedor del concierto use flexbox para alinear la imagen y la información */
+.concierto-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 100%;
+}
+
+/* Asegura que las imágenes conserven el tamaño adecuado */
+.concierto-info img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Estilo para la información del concierto */
+.info {
+    width: 50%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+/* Estilos para el contenedor del carrusel */
+.container-carousel {
+    width: 80%; /* Ajusta el ancho del carrusel */
+    height: 400px; /* Ajusta la altura */
+    margin: 0 auto; /* Centra el carrusel */
+    position: relative;
+    overflow: hidden; /* Oculta las imágenes que no están en el centro */
+}
+
+/* El contenedor de todas las imágenes en el carrusel */
+.carruseles {
+    display: flex;
+    width: 300%; /* Mantén este valor para el desplazamiento, pero ajusta la visibilidad */
+    height: 100%;
+    transition: transform 0.5s ease; /* Añade una transición suave para el desplazamiento */
+}
+
+/* Cada sección individual del carrusel */
+.slider-section {
+    width: 100%; /* Cada sección ocupa el 100% del contenedor visible */
+    height: 100%;
+}
+
+/* Estilos para las imágenes dentro del carrusel */
+.slider-section img {
+    width: 100%;
+    height: 80%; /* Ajusta la altura de las imágenes */
+    object-fit: cover;
+}
+
+/* Estilos para los botones del carrusel */
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff81;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+/* Efecto hover en los botones */
+.btn-left:hover,
+.btn-right:hover {
+    background-color: #333333d4;
+    color: #fff;
+}
+
+/* Posición del botón izquierdo */
+.btn-left {
+    left: 10px;
+}
+
+/* Posición del botón derecho */
+.btn-right {
+    right: 10px;
+}

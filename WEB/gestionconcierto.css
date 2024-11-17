@@ -1,0 +1,154 @@
+html, body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1B4F72;
+    color: white;
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #06b7f8;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: #06b7f8;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #2980B9;
+}
+
+footer {
+    background-color: #06b7f8;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    text-align: center;
+    flex: 1;
+    margin: 100px 70px 70px 70px;
+}
+
+
+/* Contenedor para la tabla y el formulario */
+
+/* Estilos para la tabla de conciertos */
+table {
+    width: 80%; /* Ancho de la tabla */
+    margin: 20px auto; /* Centramos la tabla */
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid white; /* Bordes de la tabla */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center; /* Centramos el contenido dentro de las celdas */
+}
+
+th {
+    background-color: #06b7f8; /* Color de fondo del encabezado */
+    color: white;
+}
+
+/* Estilos para los botones dentro de la tabla */
+button.editar, button.eliminar {
+    padding: 8px;
+    width: 100;
+    background-color: #06b7f8;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* Estilos para el formulario */
+.formulario {
+    display: flex;
+    flex-direction: row; /* Coloca los campos y el botón en una fila */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Alinea verticalmente el botón con los campos */
+    gap: 20px; /* Espacio entre los campos y el botón */
+    padding: 20px;
+}
+
+/* Estilos para los campos del formulario */
+.campos {
+    display: grid;
+    grid-template-columns: 100px 1fr; /* Dos columnas: una para labels y otra para inputs */
+    gap: 10px;
+}
+
+/* Alineación de los labels a la derecha */
+.campos label {
+    text-align: right;
+    color: white;
+}
+
+/* Estilos para los inputs del formulario */
+.campos input {
+    padding: 8px;
+    border: 1px solid black;
+    width: 200px; /* Fija el ancho de los inputs */
+}
+
+/* Estilos para los botones de Editar y Eliminar */
+.boton {
+    padding: 8px;
+    width: 100px; /* Fijé el ancho a 100px, para dar formato consistente */
+    background-color: #06b7f8;
+    border: 1px solid black;
+    cursor: pointer;
+  color: white;
+}
+
+button.guardar {
+    background-color: #06b7f8;
+    padding: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 100px;
+  color: white;
+}
+
+

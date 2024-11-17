@@ -1,0 +1,110 @@
+html, body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1B4F72;
+    color: white;
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #06b7f8;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: #06b7f8;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #2980B9;
+}
+
+footer {
+    background-color: #06b7f8;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.testimonios-lista {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Estilos para cada testimonio */
+.testimonio {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Colores diferentes para testimonios positivos y negativos */
+.positivo {
+    background-color: #4caf50; /* Verde para testimonios positivos */
+    color: white;
+}
+
+.negativo {
+    background-color: #f44336; /* Rojo para testimonios negativos */
+    color: white;
+}
+
+.testimonio h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.testimonio p {
+    font-size: 1.1rem;
+}

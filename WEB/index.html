@@ -1,12 +1,88 @@
-<!-- web/index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <!-- Configura el viewport para que la página sea responsiva -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola Mundo</title>
+    <!-- Importa íconos desde Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Vincula el archivo CSS externo para los estilos de la página -->
+    <link rel="stylesheet" href="index.css">
+    <title>Inicio</title>
 </head>
 <body>
-    <h1>Hola Mundo desde el Contenedor Web</h1>
+  <div class="wrapper">
+     <header>
+        <!-- Barra de navegación con links a otras páginas -->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="conciertos.html">Conciertos</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registrar.html">Registrarse / Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Título principal de la página -->
+        <h1>¡La mejor música en vivo, sin tener que vivir de ramen!</h1>
+
+        <!-- Contenedor para el carrusel de imágenes -->
+        <div class="container-carousel">
+            <div class="carruseles" id="slider">
+            <!-- Cada sección del carrusel contiene una imagen de evento -->
+                <section class="slider-section">
+                    <img src="evento1.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="evento2.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="evento3.webp">
+                </section>
+            </div>
+            <!-- Botones para mover el carrusel a la izquierda y derecha -->
+            <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
+            <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
+        </div>
+
+        <!-- Botón que redirige a la página de Conciertos -->
+        <button onclick="window.location.href='conciertos.html'">Explorar conciertos</button>
+
+        <!-- Sección de eventos destacados -->
+        <section class="eventos-destacados">
+            <h2>Eventos destacados</h2>
+            <div class="eventos">
+            <!-- Cada div contiene una imagen y descripción del evento -->
+                <div>
+                    <img src="evento1.jpg">
+                    <p>Concierto de Rock</p>
+                </div>
+                <div>
+                    <img src="evento2.jpg">
+                    <p>Festival de Música Electrónica</p>
+                </div>
+                <div>
+                    <img src="evento3.webp">
+                    <p>Concierto de Pop</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <!-- Enlaces a las políticas y página de contacto en el pie de página -->
+        <ul>
+            <li><a href="politicas.html">Políticas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript externo para la funcionalidad -->
+    <script src="index.js"></script>
+
+</div>
 </body>
 </html>
